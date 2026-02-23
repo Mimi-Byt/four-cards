@@ -1,0 +1,147 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Grey-500: hsl(234, 12%, 34%);
+    --Grey-400: hsl(216, 7%, 87%);
+    --White: hsl(0, 0%, 100%);
+
+}
+@media (max-width:375px){
+    main{
+        margin: 2rem;
+        flex-direction: column;
+        align-items: center;
+
+        
+    }
+    section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .supervisor-card,
+    .builder-card,
+    .karma-card,
+    .calculator-card {
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        max-width:max-content;
+    }
+    .supervisor-card {
+        margin-top: 0;
+    }
+    
+    .calculator-card {
+        margin-bottom: 0; 
+    }
+    
+}
+
+main {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 5rem;
+    padding: 2.5rem;
+    border-radius: 15px;
+
+}
+
+body {
+    background-color: var(--White);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.center-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container {
+    text-align: center;
+    
+}
+
+.header-container h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.header-container h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-top: 0;
+}
+.header-container p {
+    font-size: 1.2rem;
+    color: var(--Grey-500);
+    width: 30rem;
+    margin: 0 auto ;
+    margin-bottom: 1rem;
+}
+
+.supervisor-card,
+.builder-card,
+.karma-card,
+.calculator-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--Grey-400);
+    width: 20rem;
+    height: 15rem;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.supervisor-card {
+    border-top: 1rem solid var(--Cyan);
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+}
+
+.supervisor-card img,
+.builder-card img,
+.karma-card img,
+.calculator-card img {
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.builder-card {
+    border-top: 1rem solid var(--Red);
+}
+
+.karma-card {
+    border-top: 1rem solid var(--Orange);
+}
+
+.calculator-card {
+
+    margin-top: 9rem;
+    margin-bottom: 6rem;
+    border-top: 1rem solid var(--Blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10rem;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
